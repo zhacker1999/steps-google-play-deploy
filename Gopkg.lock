@@ -183,7 +183,7 @@
   version = "v0.3.3"
 
 [[projects]]
-  digest = "1:0700bf7ea666da6977088a42fc52cdb47fc17b63bd6d37e7b7c0726568d0b58e"
+  digest = "1:acf220f3345de7eefbdb60a65f2daadbc886299bda5f8d33121a69b494c58a21"
   name = "google.golang.org/api"
   packages = [
     "androidpublisher/v3",
@@ -191,16 +191,18 @@
     "googleapi/transport",
     "internal",
     "internal/gensupport",
+    "internal/impersonate",
     "internal/third_party/uritemplates",
     "option",
     "option/internaloption",
     "transport/cert",
     "transport/http",
     "transport/http/internal/propagation",
+    "transport/internal/dca",
   ]
   pruneopts = "UT"
-  revision = "52f0532eadbcc6f6b82d6f5edf66e610d10bfde6"
-  version = "v0.21.0"
+  revision = "f7ce5abca6e37cc937e5fe7992ba06892fb0d7fe"
+  version = "v0.36.0"
 
 [[projects]]
   digest = "1:14c413c64fab6d835c4e31671369f68ac7f38d2087c968eb2e55d8105b6b420d"
