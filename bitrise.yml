@@ -13,9 +13,9 @@ workflows:
       - go-test:
     # apk deploy is before aab deploy otherwise AAB owerrides APKs when app_path input is read
     after_run:
-      - apk_deploy_test_1
+      # - apk_deploy_test_1
       - aab_deploy_test
-      - multiple_aab_deploy_test
+      # - multiple_aab_deploy_test
 
   ci_untrack_phase2:
     after_run:
@@ -133,14 +133,14 @@ workflows:
       - sign-apk:
           inputs:
             - apk_path: $BITRISE_AAB_PATH
-      - path::./:
-          title: Step Test AAB
-          inputs:
-            - service_account_json_key_path: $BITRISEIO_JSON_KEY_URL
-            - package_name: $PACKAGE_NAME
-            - app_path: $BITRISE_SIGNED_AAB_PATH
-            - track: $TRACK
-            - user_fraction: 0.6
+      # - path::./:
+      # title: Step Test AAB
+      # inputs:
+      #   - service_account_json_key_path: $BITRISEIO_JSON_KEY_URL
+      #   - package_name: $PACKAGE_NAME
+      #   - app_path: $BITRISE_SIGNED_AAB_PATH
+      #   - track: $TRACK
+      #   - user_fraction: 0.6
 
   _common_apk:
     envs:
